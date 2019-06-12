@@ -6,6 +6,9 @@
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{anyfontsize}
+\usepackage{mdframed}
+\usepackage{tabu}
+\usepackage{enumitem}
 
 % \definecolor{myOrange}{rgb}{59,67,88}
 \definecolor{myOrange}{rgb}{0.23,0.263,0.345}
@@ -47,6 +50,87 @@
     }
 \end{center}
 \vspace{1em}
-lol
+
+\newmdenv[
+    topline=false,
+    bottomline=false,
+    rightline=false,
+    leftline=false,
+    linewidth=3pt,
+    linecolor=green,
+    innerleftmargin=5pt,
+    leftmargin=1in,
+    rightmargin=1in,
+    innerrightmargin=0pt,
+]{textbox}
+
+\begin{textbox}
+    \subsection*{\fontspec{Muli-SemiBold.ttf} TECHNICAL SKILLS}
+    \AtBeginEnvironment{tabu}{\setlist[itemize]{wide = 0pt, leftmargin = *}}
+    \hline
+    \vspace{1em}
+    \centering
+    \begin{tabu} to \textwidth {XXX}
+    
+       %\toprule
+       \textsc{\normalsize \fontspec{Raleway-SemiBold.ttf} Machining/Fabrication} & \textsc{\normalsize \fontspec{Raleway-SemiBold.ttf} Instrumentation} & \textsc{\normalsize \fontspec{Raleway-SemiBold.ttf} Software} \\
+       \vspace{-1.5em}
+       \begin{itemize}
+       \setlength\itemsep{-0.25em}
+           \item Bench Lathe
+           \item Milling Machine
+           \item Drill Press
+           \item Hand Tools/Woodworking
+           \item 3D Printing
+           \item \textit{CAN3 B78.1 M83 Drawings}
+       \end{itemize} & 
+       \vspace{-1.5em}
+       \begin{itemize}
+       \setlength\itemsep{-0.25em}
+           \item Soldering
+           \item Wiring
+           \item Oscilloscopes
+           \item Digital Multimeters
+           \item Signal Generator
+           \item Circuit Diagrams/Analysis
+       \end{itemize} & 
+       \vspace{-1.5em}
+       \begin{itemize}
+       \setlength\itemsep{-0.25em}
+           \item Solidworks
+           \item Autodesk Fusion 360
+           \item AutoCAD
+           \item \textsc{Matlab}
+           \item Arduino, C, Java, JavaScript
+           \item MS/Google/Libre Office
+       \end{itemize}
+       \bottomrule
+    \end{tabu}
+    
+    \flushleft
+    
+    \subsection*{\fontspec{Muli-SemiBold.ttf} EDUCATION}
+    \hline
+    \vspace{1em}
+    \textbf{\fontspec{Raleway-SemiBold.ttf}\textsc{UNIVERSITY OF BRITISH COLOMBIA} \hfill \textbf{Expected, June 2022} \\
+    Bachelor of Applied Science - Mechanical Engineering} \\
+    Searching for Co-op Work Term 4/5 $|$ Availability: 4 mo.
+    \vspace{1em}
+    
+    \textbf{\fontspec{Raleway-SemiBold.ttf}\textsc{UNIVERSITY OF BRITISH COLOMBIA} \hfill \textbf{Ongoing} \\
+    Bachelor of Science - Combined Major: Physics, Life Science, Chemistry} \\
+    \vspace{0.3em}
+    
+    Key Engineering Related Courses
+    \vspace{-0.5em}
+    \begin{itemize}
+       \setlength\itemsep{-0.25em}
+           \item Waves, Light and Fluids (91\%)
+           \item Linear Algebra (96\%)
+           \item Software Construction, Computation Models, Functional Programming (90\%+)
+       \end{itemize}
+       
+    
+\end{textbox}
 
 \end{document}
