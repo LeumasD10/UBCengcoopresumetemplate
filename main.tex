@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage[margin=0in]{geometry}
+\usepackage{bold-extra}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+
+% \definecolor{myOrange}{rgb}{59,67,88}
+\definecolor{myOrange}{rgb}{0.23,0.263,0.345}
+
+\pagenumbering{gobble}
+\setlength\parindent{0pt}
+
+\setmainfont{[calibril.ttf]} 
+\setsansfont{[calibril.ttf]} 
+\setmonofont{Inconsolata}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+   \fill[myOrange] (current page.north west) rectangle (\paperwidth, 24cm);
+\end{tikzpicture}
+\vspace{-11em}
+
+
+\begin{center}
+\textcolor{white} {
+    \Huge{
+    % \textbf{
+    %     \fontsize{45}{60}
+    %     \textsc{some name}}
+    % } \\ \\ \\ \\
+    \fontsize{35}{30}
+        \fontspec{[Roboto-Thin.ttf]}
+        \textsc{
+            Leumas % FIRST NAME
+            \fontspec{[Roboto-Light.ttf]}Samuel % LAST NAME
+        }} \\ \vspace*{0.1em}  
+    \Large{ 
+        mechanical engineering student
+    } \\ \vspace*{0.1em}
+    \normalsize
+    1234 Some Address | (123) 456 7890 | youremail@gmail.com | LinkedIn
+    }
+\end{center}
+\vspace{1em}
+lol
+
+\end{document}
